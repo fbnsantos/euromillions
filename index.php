@@ -5,7 +5,7 @@
  </head>
  <body>
  <form>
- 
+<input type="text" name="pass" value="Mickey"><br>
 <input type="submit" name="stop" value="STOP" />
 <br />
 <input type="submit" name="run" value="RUN" />
@@ -14,6 +14,8 @@
 </form>
 <?php
 
+include("pass.php");
+
 
 function startMyScript(){
 
@@ -21,25 +23,39 @@ function startMyScript(){
 }
 
 if( isset( $_REQUEST['run'] )){
-    echo '<p>Configured to RUN</p>';
-    $myfile = fopen("status.txt", "w") or die("Unable to open file!");
-    $txt = "run\n";
-    fwrite($myfile, $txt);
-    $txt = "Jane Doe\n";
-    fwrite($myfile, $txt);
-    fclose($myfile);
-    startMyScript();
-    header("Location: http://fbnsantos.duckdns.org/editor/workspace/Euromillions/");
+    
+    if( strcmp( $_REQUEST['pass'],$pass )!==0 ){
+       
+        
+      echo "You need a pass to do this............";
+        
+    }else{
+        echo '<p>Configured to RUN</p>';
+        $myfile = fopen("status.txt", "w") or die("Unable to open file!");
+        $txt = "run\n";
+        fwrite($myfile, $txt);
+        $txt = "Jane Doe\n";
+        fwrite($myfile, $txt);
+        fclose($myfile);
+        startMyScript();
+        header("Location: http://fbnsantos.duckdns.org/editor/workspace/Euromillions/");
+    }
 }else if( isset( $_REQUEST['stop'] )){
-    echo '<p>Configured to STOP</p>';
-    $myfile = fopen("status.txt", "w") or die("Unable to open file!");
-    $txt = "stop\n";
-    fwrite($myfile, $txt);
-    $txt = "Jane Doe\n";
-    fwrite($myfile, $txt);
-    fclose($myfile);
-    header("Location: http://fbnsantos.duckdns.org/editor/workspace/Euromillions/");
-   die();
+    if( strcmp( $_REQUEST['pass'],$pass )!==0 ){
+        
+      echo "You need a pass to do this............";
+        
+    }else{
+        echo '<p>Configured to STOP</p>';
+        $myfile = fopen("status.txt", "w") or die("Unable to open file!");
+        $txt = "stop\n";
+        fwrite($myfile, $txt);
+        $txt = "Jane Doe\n";
+        fwrite($myfile, $txt);
+        fclose($myfile);
+        header("Location: http://fbnsantos.duckdns.org/editor/workspace/Euromillions/");
+       die();
+    }
 }else{
 	header("Refresh:40");	
 }

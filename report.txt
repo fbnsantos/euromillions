@@ -1,27 +1,27 @@
 kill old process ... </br>
 eurorun: no process found
 update database </br>
---2016-12-27 22:03:16--  http://wget/
+--2016-12-27 22:47:26--  http://wget/
 Resolving wget (wget)... failed: Name or service not known.
 wget: unable to resolve host address 'wget'
---2016-12-27 22:03:16--  https://docs.google.com/spreadsheet/pub?key=0AhqMeY8ZOrNKdEFUQ3VaTHVpU29UZ3l4emFQaVZub3c&output=csv
-Resolving docs.google.com (docs.google.com)... 216.58.211.238, 2a00:1450:4003:807::200e
-Connecting to docs.google.com (docs.google.com)|216.58.211.238|:443... connected.
+--2016-12-27 22:47:26--  https://docs.google.com/spreadsheet/pub?key=0AhqMeY8ZOrNKdEFUQ3VaTHVpU29UZ3l4emFQaVZub3c&output=csv
+Resolving docs.google.com (docs.google.com)... 84.91.171.187, 84.91.171.173, 84.91.171.147, ...
+Connecting to docs.google.com (docs.google.com)|84.91.171.187|:443... connected.
 HTTP request sent, awaiting response... 302 Moved Temporarily
 Location: https://docs.google.com/spreadsheets/d/1JGenc59xTbfWakjESO7fiBOT1rkk8n42kRbH2TjuP_w/pub?output=csv [following]
---2016-12-27 22:03:16--  https://docs.google.com/spreadsheets/d/1JGenc59xTbfWakjESO7fiBOT1rkk8n42kRbH2TjuP_w/pub?output=csv
+--2016-12-27 22:47:26--  https://docs.google.com/spreadsheets/d/1JGenc59xTbfWakjESO7fiBOT1rkk8n42kRbH2TjuP_w/pub?output=csv
 Reusing existing connection to docs.google.com:443.
 HTTP request sent, awaiting response... 200 OK
 Length: unspecified [text/csv]
 Saving to: 'test.csv'
 
-     0K .......... .......... .......... .                      662K=0.05s
+     0K .......... .......... .......... .                      818K=0.04s
 
-2016-12-27 22:03:16 (662 KB/s) - 'test.csv' saved [32595]
+2016-12-27 22:47:27 (818 KB/s) - 'test.csv' saved [32595]
 
-FINISHED --2016-12-27 22:03:16--
-Total wall clock time: 0.7s
-Downloaded: 1 files, 32K in 0.05s (662 KB/s)
+FINISHED --2016-12-27 22:47:27--
+Total wall clock time: 0.8s
+Downloaded: 1 files, 32K in 0.04s (818 KB/s)
 Running Program </br>
 |14  - 18  - 19  - 31  - 37 * 4 +  5
 already readed this key.964()1</br>
@@ -1951,5 +1951,5 @@ already readed this key.964()962</br>
 already readed this key.964()963</br>
 |4  - 16  - 20  - 39  - 46 * 2 +  5
 already readed this key.964()964</br>
-Process 9857 dead!
-Process 9857 detected
+Process 13300 dead!
+Process 13300 detected
